@@ -47,11 +47,11 @@ class profile::linux {
       include apt
       class { 'unattended_upgrades':
         mail            => {
-          'to'            => 'saasops@topdesk.com',
+          'to'            => 'laagabinl@gmail.com',
           'only_on_error' => false,
         },
         sender          => lookup('apt_unattended_upgrade::from_email',
-        'default_value' => 'aptunattendedupgrade@topdesk.net'),
+        'default_value' => 'laagabinl@gmail.com'),
         blacklist       => $other_packages,
         origins         => ["${distro_id}:${distro_codename}", "${distro_id}:${distro_codename}-security", "${distro_id}:${distro_codename}-updates"],
       }
@@ -99,11 +99,6 @@ class profile::linux {
     }
   }
 
-  # Remove old topdesk internal RPM repository
-  yumrepo { 'TOPdesk':
-    ensure => absent,
-  }
-
   group { 'add_wheel_group':
     ensure => present,
     name   => 'wheel',
@@ -136,7 +131,7 @@ class profile::linux {
   }
 
   # Implement sudo
-  file { '/etc/sudoers.d/topdesk':
+  file { '/etc/sudoers.d/gaborl':
     ensure => file,
     owner  => 'root',
     group  => 'root',
@@ -156,12 +151,6 @@ class profile::linux {
   service { 'sshd':
     ensure => running,
     enable => true,
-  }
-
-  # Distribution of topdesk root public ca
-  ca_cert::ca { 'saasrca01':
-    ensure => 'trusted',
-    source => 'puppet:///modules/profile/ca_cert/saasrca01-ca.crt',
   }
 
   include wget
