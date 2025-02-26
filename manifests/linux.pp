@@ -34,13 +34,20 @@ class profile::linux {
   $other_packages = [
     'kibana', 'elasticsearch', 'ncpa', 'logstash', 'WALinuxAgent', 'walinuxagent', 'influxdb', 'telegraf', 'grafana', 'mongodb-org',
     'mongodb-org-mongos', 'mongodb-org-server', 'mongodb-org-shell', 'mongodb-org-tools', 'haproxy', 'keepalived',
-    'cassandra30', 'java-1.8.0-openjdk*', 'nodejs',
+    'cassandra30', 'java-1.8.0-openjdk*',
   ]
 
   case $facts['os']['family'] {
     'Debian': {
       class { 'ntp':
         servers => lookup('ntp::servers'),
+      }
+
+      # Ensure Node.js is installed
+      class { 'nodejs':
+        manage_package_repo       => false,
+        nodejs_dev_package_ensure => installed,
+        npm_package_ensure        => installed,
       }
 
       # Configure apt unattended upgrades
@@ -91,7 +98,7 @@ class profile::linux {
 
       # Ensure auditd for SIEM on Debian/Ubuntu (enabled by default on CentOS)
       package { 'auditd':
-        ensure => present,
+        ensure => installed,
       }
     }
     default: {
