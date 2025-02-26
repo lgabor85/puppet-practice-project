@@ -1,0 +1,19 @@
+---
+# Common data for Hiera
+# This file can include variables and settings shared across the environment.
+
+# Example of common variables
+ntp::servers:
+  - "0.pool.ntp.org"
+  - "1.pool.ntp.org"
+  - "2.pool.ntp.org"
+  - "3.pool.ntp.org"
+
+general::smtpserver: "smtp.example.com"
+general::mail_receiver_cc: "admin@example.com"
+linux::domain_join: false
+linux::create_ansibleuser: true
+linux::ansibleuser::sshkeys:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."
+  
+# Add any additional common data below as needed.

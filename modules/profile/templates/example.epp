@@ -1,0 +1,5 @@
+// filepath: /puppet-practice-project/puppet-practice-project/modules/profile/templates/example.epp
+<% |$variable1, $variable2| -%>
+# This is an example EPP template.
+# You can use variables like $variable1 and $variable2 to create dynamic content.
+# Add your template logic here.
