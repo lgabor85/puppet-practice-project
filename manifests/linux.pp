@@ -34,7 +34,7 @@ class profile::linux {
   $other_packages = [
     'kibana', 'elasticsearch', 'ncpa', 'logstash', 'WALinuxAgent', 'walinuxagent', 'influxdb', 'telegraf', 'grafana', 'mongodb-org',
     'mongodb-org-mongos', 'mongodb-org-server', 'mongodb-org-shell', 'mongodb-org-tools', 'haproxy', 'keepalived',
-    'cassandra30', 'java-1.8.0-openjdk*',
+    'cassandra30', 'java-1.8.0-openjdk*', 'nodejs',
   ]
 
   case $facts['os']['family'] {

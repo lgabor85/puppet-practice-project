@@ -1,6 +1,6 @@
 
 
-
+This specific section is responsible for configuring the mail server for hosts that are not SMTP servers.
 It uses an `unless` statement to check if the hostname of the current host matches a pattern that includes "smtp". This is done using the `$facts['networking']['hostname']` variable, which contains the hostname of the current host, and a regular expression `/^.*smtp.*/`. If the hostname does not match this pattern, the code inside the `unless` block is executed.
 
 Within the `unless` block, the `lookup` function is used to retrieve the value of the `general::smtpserver` key from the Puppet data hierarchy. This value is assigned to the `$relayserver` variable. The `lookup` function allows for flexible and centralized management of configuration data, as the actual SMTP server can be specified in a Hiera data file or another data source.
