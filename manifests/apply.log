@@ -1,0 +1,456 @@
+2025-02-26 15:17:22 +0100 Facter (debug): Resolving facts sequentially
+2025-02-26 15:17:22 +0100 Facter (debug): resolving fact with user_query: hostname
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: hostname in file: hostname.rb
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: hostname in core facts and external facts
+2025-02-26 15:17:22 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:22 +0100 Facter (debug): List of resolvable facts: [#<Facter::SearchedFact:0x000055a81a37c978 @name="hostname", @fact_class=Facts::Linux::Networking::Hostname, @user_query="hostname", @type=:legacy, @file=nil>]
+2025-02-26 15:17:22 +0100 Facter (debug): Tried to retrieve hostname and got: puppetclient
+2025-02-26 15:17:22 +0100 Facter (debug): Only managed to read hostname: puppetclient, no domain was found.
+2025-02-26 15:17:22 +0100 Facter (debug): Managed to read hostname: puppetclient and domain: home
+2025-02-26 15:17:22 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:22 +0100 Facter (debug): fact "hostname" has resolved to: puppetclient
+2025-02-26 15:17:22 +0100 Facter (debug): resolving fact with user_query: domain
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: domain in file: domain.rb
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: domain in core facts and external facts
+2025-02-26 15:17:22 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:22 +0100 Facter (debug): List of resolvable facts: [#<Facter::SearchedFact:0x000055a81a38c238 @name="domain", @fact_class=Facts::Linux::Networking::Domain, @user_query="domain", @type=:legacy, @file=nil>]
+2025-02-26 15:17:22 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:22 +0100 Facter (debug): fact "domain" has resolved to: home
+2025-02-26 15:17:22 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:22 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:22 +0100 Puppet (debug): Caching environment :development (ttl = 0 sec)
+2025-02-26 15:17:22 +0100 Puppet (debug): Evicting cache entry for environment :development
+2025-02-26 15:17:22 +0100 Puppet (debug): Deleted text domain :development: false
+2025-02-26 15:17:22 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:22 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:22 +0100 Puppet (debug): Caching environment :development (ttl = 0 sec)
+2025-02-26 15:17:22 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:22 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:22 +0100 Puppet (debug): Caching environment :development (ttl = 0 sec)
+2025-02-26 15:17:22 +0100 Puppet (debug): Applying settings catalog for sections main, agent, ssl
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'confdir': 'File[/home/gaborl/.puppetlabs/etc/puppet]{:path=>"/home/gaborl/.puppetlabs/etc/puppet", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'codedir': 'File[/home/gaborl/.puppetlabs/etc/code]{:path=>"/home/gaborl/.puppetlabs/etc/code", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'vardir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'logdir': 'File[/home/gaborl/.puppetlabs/var/log]{:path=>"/home/gaborl/.puppetlabs/var/log", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'statedir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/state]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/state", :mode=>"1755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'rundir': 'File[/home/gaborl/.puppetlabs/var/run]{:path=>"/home/gaborl/.puppetlabs/var/run", :mode=>"755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'libdir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/lib]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/lib", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'preview_outputdir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/preview]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/preview", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'certdir': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/certs]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/certs", :mode=>"755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'ssldir': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl", :mode=>"771", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'publickeydir': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/public_keys]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/public_keys", :mode=>"755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'requestdir': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/certificate_requests]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/certificate_requests", :mode=>"755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'privatekeydir': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/private_keys]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/private_keys", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'privatedir': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/private]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/private", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'hostprivkey': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/private_keys/puppetclient.home.pem]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/private_keys/puppetclient.home.pem", :mode=>"640", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'localcacert': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/certs/ca.pem]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/certs/ca.pem", :mode=>"644", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'hostcrl': 'File[/home/gaborl/.puppetlabs/etc/puppet/ssl/crl.pem]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/ssl/crl.pem", :mode=>"644", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'statefile': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/state/state.yaml]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/state/state.yaml", :mode=>"640", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'clientyamldir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/client_yaml]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/client_yaml", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'client_datadir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/client_data]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/client_data", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'deviceconfdir': 'File[/home/gaborl/.puppetlabs/etc/puppet/devices]{:path=>"/home/gaborl/.puppetlabs/etc/puppet/devices", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'clientbucketdir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/clientbucket]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/clientbucket", :mode=>"750", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'publicdir': 'File[/home/gaborl/.puppetlabs/opt/puppet/public]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/public", :mode=>"755", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'lastrunfile': 'File[/home/gaborl/.puppetlabs/opt/puppet/public/last_run_summary.yaml]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/public/last_run_summary.yaml", :mode=>"640", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'lastrunreport': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/state/last_run_report.yaml]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/state/last_run_report.yaml", :mode=>"640", :ensure=>:file, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'graphdir': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/state/graphs]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/state/graphs", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'pluginfactdest': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/facts.d]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/facts.d", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Puppet (debug): Using settings: adding file resource 'localedest': 'File[/home/gaborl/.puppetlabs/opt/puppet/cache/locales]{:path=>"/home/gaborl/.puppetlabs/opt/puppet/cache/locales", :ensure=>:directory, :loglevel=>:debug, :links=>:follow, :backup=>false}'
+2025-02-26 15:17:22 +0100 Facter (debug): resolving fact with user_query: operatingsystem
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: operatingsystem in file: operatingsystem.rb
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: operatingsystem in core facts and external facts
+2025-02-26 15:17:22 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:22 +0100 Facter (debug): List of resolvable facts: [#<Facter::SearchedFact:0x000055a81a1b01d0 @name="operatingsystem", @fact_class=Facts::Linux::Os::Name, @user_query="operatingsystem", @type=:legacy, @file=nil>]
+2025-02-26 15:17:22 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:22 +0100 Facter (debug): fact "operatingsystem" has resolved to: Ubuntu
+2025-02-26 15:17:22 +0100 Puppet (debug): Could not find library 'cfpropertylist' required to enable feature 'cfpropertylist'
+2025-02-26 15:17:22 +0100 Facter (debug): resolving fact with user_query: os.name
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: os.name in file: os.name.rb
+2025-02-26 15:17:22 +0100 Facter (debug): Searching fact: os.name in core facts and external facts
+2025-02-26 15:17:22 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:22 +0100 Facter (debug): List of resolvable facts: [#<Facter::SearchedFact:0x000055a819b445d0 @name="os.name", @fact_class=Facts::Linux::Os::Name, @user_query="os.name", @type=:core, @file=nil>]
+2025-02-26 15:17:22 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:22 +0100 Facter (debug): fact "os.name" has resolved to: Ubuntu
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/state] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/lib] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/preview] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/certs] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/public_keys] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/certificate_requests] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/private_keys] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/private] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/private_keys/puppetclient.home.pem] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl/private_keys]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/certs/ca.pem] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl/certs]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/ssl/crl.pem] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet/ssl]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/state/state.yaml] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache/state]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/client_yaml] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/client_data] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/etc/puppet/devices] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/etc/puppet]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/clientbucket] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/public/last_run_summary.yaml] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/public]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/state/last_run_report.yaml] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache/state]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/state/graphs] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache/state]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/facts.d] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/locales] (debug): Adding autorequire relationship with File[/home/gaborl/.puppetlabs/opt/puppet/cache]
+2025-02-26 15:17:22 +0100 /File[/home/gaborl/.puppetlabs/opt/puppet/cache/state/state.yaml]/mode (debug): mode changed '0660' to '0640'
+2025-02-26 15:17:22 +0100 Puppet (debug): Finishing transaction 11480
+2025-02-26 15:17:22 +0100 Puppet (debug): Runtime environment: puppet_version=7.34.0, ruby_version=2.7.8, run_mode=user, openssl_version='OpenSSL 1.1.1w  11 Sep 2023', openssl_fips=false, default_encoding=UTF-8
+2025-02-26 15:17:22 +0100 Puppet (debug): Loading external facts from /home/gaborl/.puppetlabs/opt/puppet/cache/facts.d
+2025-02-26 15:17:22 +0100 Facter (debug): Facter version: 4.10.0
+2025-02-26 15:17:22 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:22 +0100 Facter (debug): Loading custom facts
+2025-02-26 15:17:22 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:22 +0100 Facter (debug): Executing command: lsb_release -a
+2025-02-26 15:17:22 +0100 Facter (debug): Command lsb_release -a completed with the following stderr message: No LSB modules are available.
+2025-02-26 15:17:22 +0100 Facter (debug): Executing command: uname -m &&
+            uname -n &&
+            uname -p &&
+            uname -r &&
+            uname -s &&
+            uname -v
+2025-02-26 15:17:22 +0100 Facter (debug): Executing command: /opt/puppetlabs/puppet/bin/augparse --version 2>&1
+2025-02-26 15:17:22 +0100 Facter (debug): File at: /proc/1/environ is not accessible.
+2025-02-26 15:17:22 +0100 Facter (debug): Executing command: virt-what
+2025-02-26 15:17:22 +0100 Facter (debug): Failed while executing 'virt-what': No such file or directory - virt-what
+2025-02-26 15:17:22 +0100 Facter (debug): Executing command: vmware -v
+2025-02-26 15:17:22 +0100 Facter (debug): Failed while executing 'vmware -v': No such file or directory - vmware
+2025-02-26 15:17:22 +0100 Facter (debug): Executing command: virt-what
+2025-02-26 15:17:22 +0100 Facter (debug): Failed while executing 'virt-what': No such file or directory - virt-what
+2025-02-26 15:17:22 +0100 Facter (debug): File at: /proc/xen/capabilities is not accessible.
+2025-02-26 15:17:22 +0100 Facter (debug): Executing command: lspci
+2025-02-26 15:17:22 +0100 Facter (debug): Querying Ec2 metadata
+2025-02-26 15:17:23 +0100 Facter (debug): Trying to connect to http://169.254.169.254/latest/api/token but got: execution expired
+2025-02-26 15:17:23 +0100 Facter (debug): Trying to connect to http://169.254.169.254/latest/meta-data/ but got: execution expired
+2025-02-26 15:17:24 +0100 Facter (debug): Trying to connect to http://169.254.169.254/latest/user-data/ but got: execution expired
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: ip -o link show
+2025-02-26 15:17:24 +0100 Facter (debug): Adding to interface lo, binding:
+{:address=>"127.0.0.1", :netmask=>"255.0.0.0", :network=>"127.0.0.0"}
+2025-02-26 15:17:24 +0100 Facter (debug): Adding to interface eth0, binding:
+{:address=>"172.28.103.180", :netmask=>"255.255.240.0", :network=>"172.28.96.0"}
+2025-02-26 15:17:24 +0100 Facter (debug): Adding to interface eth1, binding:
+{:address=>"172.28.103.181", :netmask=>"255.255.240.0", :network=>"172.28.96.0"}
+2025-02-26 15:17:24 +0100 Facter (debug): Adding to interface lo, binding:
+{:address=>"::1", :netmask=>"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", :network=>"::1", :scope6=>"host"}
+2025-02-26 15:17:24 +0100 Facter (debug): Adding to interface eth0, binding:
+{:address=>"fe80::215:5dff:fe11:bf8d", :netmask=>"ffff:ffff:ffff:ffff::", :network=>"fe80::", :scope6=>"link"}
+2025-02-26 15:17:24 +0100 Facter (debug): Adding to interface eth1, binding:
+{:address=>"fe80::7c79:81ff:fe68:7eee", :netmask=>"ffff:ffff:ffff:ffff::", :network=>"fe80::", :scope6=>"link"}
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: ip link show
+2025-02-26 15:17:24 +0100 Facter (debug): Get DHCP for interface lo
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface lo, from systemd/netif/leases
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /run/systemd/netif/leases/1 is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface lo, from dhclient leases
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface lo, from dhcpcd command
+2025-02-26 15:17:24 +0100 Facter (debug): Found interface lo with {:bindings=>[{:address=>"127.0.0.1", :netmask=>"255.0.0.0", :network=>"127.0.0.0"}], :bindings6=>[{:address=>"::1", :netmask=>"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", :network=>"::1", :scope6=>"host"}], :mtu=>65536, :operational_state=>"unknown", :physical=>false}
+2025-02-26 15:17:24 +0100 Facter (debug): Get DHCP for interface eth0
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface eth0, from systemd/netif/leases
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /run/systemd/netif/leases/2 is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface eth0, from dhclient leases
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface eth0, from dhcpcd command
+2025-02-26 15:17:24 +0100 Facter (debug): Found interface eth0 with {:mac=>"00:15:5d:11:bf:8d", :bindings=>[{:address=>"172.28.103.180", :netmask=>"255.255.240.0", :network=>"172.28.96.0"}], :bindings6=>[{:address=>"fe80::215:5dff:fe11:bf8d", :netmask=>"ffff:ffff:ffff:ffff::", :network=>"fe80::", :scope6=>"link"}], :mtu=>1500, :operational_state=>"up", :physical=>true, :speed=>10000, :duplex=>"full"}
+2025-02-26 15:17:24 +0100 Facter (debug): Get DHCP for interface eth1
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface eth1, from systemd/netif/leases
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /run/systemd/netif/leases/3 is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface eth1, from dhclient leases
+2025-02-26 15:17:24 +0100 Facter (debug): Attempt to get DHCP for interface eth1, from dhcpcd command
+2025-02-26 15:17:24 +0100 Facter (debug): Found interface eth1 with {:mac=>"7e:79:81:68:7e:ee", :bindings=>[{:address=>"172.28.103.181", :netmask=>"255.255.240.0", :network=>"172.28.96.0"}], :bindings6=>[{:address=>"fe80::7c79:81ff:fe68:7eee", :netmask=>"ffff:ffff:ffff:ffff::", :network=>"fe80::", :scope6=>"link"}], :mtu=>1500, :operational_state=>"unknown", :physical=>false}
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: ip route show
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: ip -6 route show
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /etc/ssh/ssh_host_dsa_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /etc/ssh_host_rsa_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /etc/ssh_host_dsa_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /etc/ssh_host_ecdsa_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /etc/ssh_host_ed25519_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /usr/local/etc/ssh_host_rsa_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /usr/local/etc/ssh_host_dsa_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /usr/local/etc/ssh_host_ecdsa_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /usr/local/etc/ssh_host_ed25519_key.pub is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o serial /dev/sdf
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o serial /dev/sdd
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o serial /dev/sdb
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o serial /dev/sdg
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o serial /dev/sde
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o serial /dev/sdc
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o serial /dev/sda
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o wwn /dev/sdf
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o wwn /dev/sdd
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o wwn /dev/sdb
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o wwn /dev/sdg
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o wwn /dev/sde
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o wwn /dev/sdc
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /usr/bin/lsblk -dn -o wwn /dev/sda
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /proc/1/environ is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: /bin/cat /proc/uptime
+2025-02-26 15:17:24 +0100 Facter (debug): Querying Ec2 metadata
+2025-02-26 15:17:24 +0100 Facter (debug): Querying Ec2 metadata
+2025-02-26 15:17:24 +0100 Facter (debug): No Vmware hypervisor detected.
+2025-02-26 15:17:24 +0100 Facter (debug): Detected product name: 
+2025-02-26 15:17:24 +0100 Facter (debug): Detected hypervisor 
+2025-02-26 15:17:24 +0100 Facter (debug): Detected product name: 
+2025-02-26 15:17:24 +0100 Facter (debug): Detected bios vendor: 
+2025-02-26 15:17:24 +0100 Facter (debug): Detected manufacturer: 
+2025-02-26 15:17:24 +0100 Facter (debug): No Xen hypervisor detected.
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: lsblk --version 2>&1
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: lsblk -p -P -o NAME,FSTYPE,UUID,LABEL,PARTUUID,PARTLABEL,PARTTYPE
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: lsblk --version 2>&1
+2025-02-26 15:17:24 +0100 Facter (debug): File at: /proc/sys/crypto/fips_enabled is not accessible.
+2025-02-26 15:17:24 +0100 Facter (debug): Linux Virtual Resolver
+2025-02-26 15:17:24 +0100 Facter (debug): Fact value is: kvm
+2025-02-26 15:17:24 +0100 Facter (debug): Tried to retrieve hostname and got: puppetclient
+2025-02-26 15:17:24 +0100 Facter (debug): Only managed to read hostname: puppetclient, no domain was found.
+2025-02-26 15:17:24 +0100 Facter (debug): Managed to read hostname: puppetclient and domain: home
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: lscpu | grep -e 'Thread(s)' -e 'Core(s)'
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: cat /proc/self/mounts
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: cat /proc/self/mounts
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: cat /proc/self/mounts
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: cat /proc/self/mounts
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: cat /proc/self/mounts
+2025-02-26 15:17:24 +0100 Facter (debug): Executing command: lsb_release -a
+2025-02-26 15:17:24 +0100 Facter (debug): Command lsb_release -a completed with the following stderr message: No LSB modules are available.
+2025-02-26 15:17:24 +0100 Facter (debug): custom fact puppetversion was resolved from: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet.rb:192
+2025-02-26 15:17:24 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:24 +0100 Facter (debug): custom fact agent_specified_environment was resolved from: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet.rb:196
+2025-02-26 15:17:24 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.release" has resolved to: {"full"=>"22.04", "major"=>"22.04"}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "operatingsystemmajrelease" has resolved to: 22.04
+2025-02-26 15:17:24 +0100 Facter (debug): fact "operatingsystemrelease" has resolved to: 22.04
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.distro.release" has resolved to: {"full"=>"22.04", "major"=>"22.04"}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "lsbdistrelease" has resolved to: 22.04
+2025-02-26 15:17:24 +0100 Facter (debug): fact "lsbmajdistrelease" has resolved to: 22.04
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.architecture" has resolved to: amd64
+2025-02-26 15:17:24 +0100 Facter (debug): fact "architecture" has resolved to: amd64
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.distro.description" has resolved to: Ubuntu 22.04.5 LTS
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.distro.id" has resolved to: Ubuntu
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.distro.codename" has resolved to: jammy
+2025-02-26 15:17:24 +0100 Facter (debug): fact "lsbdistcodename" has resolved to: jammy
+2025-02-26 15:17:24 +0100 Facter (debug): fact "lsbdistdescription" has resolved to: Ubuntu 22.04.5 LTS
+2025-02-26 15:17:24 +0100 Facter (debug): fact "lsbdistid" has resolved to: Ubuntu
+2025-02-26 15:17:24 +0100 Facter (debug): fact "aio_agent_version" has resolved to: 7.34.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ruby.version" has resolved to: 2.7.8
+2025-02-26 15:17:24 +0100 Facter (debug): fact "rubyversion" has resolved to: 2.7.8
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ruby.sitedir" has resolved to: /opt/puppetlabs/puppet/lib/ruby/site_ruby/2.7.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "rubysitedir" has resolved to: /opt/puppetlabs/puppet/lib/ruby/site_ruby/2.7.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ruby.platform" has resolved to: x86_64-linux
+2025-02-26 15:17:24 +0100 Facter (debug): fact "rubyplatform" has resolved to: x86_64-linux
+2025-02-26 15:17:24 +0100 Facter (debug): fact "augeas.version" has resolved to: 1.14.1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "augeasversion" has resolved to: 1.14.1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "mountpoints" has resolved to: {"/usr/lib/modules/5.15.153.1-microsoft-standard-WSL2"=>{"device"=>"none", "filesystem"=>"overlay", "options"=>["rw", "nosuid", "nodev", "noatime", "lowerdir=/modules", "upperdir=/lib/modules/5.15.153.1-microsoft-standard-WSL2/rw/upper", "workdir=/lib/modules/5.15.153.1-microsoft-standard-WSL2/rw/work"], "size_bytes"=>6272757760, "available_bytes"=>6272757760, "used_bytes"=>0, "capacity"=>"0%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"0 bytes"}, "/mnt/wsl"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "relatime"], "size_bytes"=>6272757760, "available_bytes"=>6272753664, "used_bytes"=>4096, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"4.00 KiB"}, "/mnt/wsl/docker-desktop/shared-sockets/guest-services"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "mode=755"], "size_bytes"=>6272757760, "available_bytes"=>6272749568, "used_bytes"=>8192, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"8.00 KiB"}, "/mnt/wsl/docker-desktop/shared-sockets/host-services"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "mode=755"], "size_bytes"=>6272757760, "available_bytes"=>6272749568, "used_bytes"=>8192, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"8.00 KiB"}, "/mnt/wsl/docker-desktop/docker-desktop-user-distro"=>{"device"=>"/dev/sdd", "filesystem"=>"ext4", "options"=>["rw", "relatime", "discard", "errors=remount-ro", "data=ordered"], "size_bytes"=>1081101176832, "available_bytes"=>1026050015232, "used_bytes"=>58806272, "capacity"=>"0.01%", "size"=>"1006.85 GiB", "available"=>"955.58 GiB", "used"=>"56.08 MiB"}, "/usr/lib/wsl/drivers"=>{"device"=>"drivers", "filesystem"=>"9p", "options"=>["ro", "dirsync", "nosuid", "nodev", "noatime", "aname=drivers;fmask=222;dmask=222", "mmap", "access=client", "msize=65536", "trans=fd", "rfd=7", "wfd=7"], "size_bytes"=>511436898304, "available_bytes"=>315551084544, "used_bytes"=>195885813760, "capacity"=>"38.30%", "size"=>"476.31 GiB", "available"=>"293.88 GiB", "used"=>"182.43 GiB"}, "/"=>{"device"=>"/dev/sdf", "filesystem"=>"ext4", "options"=>["rw", "relatime", "discard", "errors=remount-ro", "data=ordered"], "size_bytes"=>1081101176832, "available_bytes"=>1021679890432, "used_bytes"=>4428931072, "capacity"=>"0.43%", "size"=>"1006.85 GiB", "available"=>"951.51 GiB", "used"=>"4.12 GiB"}, "/mnt/wslg"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "relatime"], "size_bytes"=>6272757760, "available_bytes"=>6272659456, "used_bytes"=>98304, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"96.00 KiB"}, "/mnt/wslg/distro"=>{"device"=>"/dev/sdf", "filesystem"=>"ext4", "options"=>["ro", "relatime", "discard", "errors=remount-ro", "data=ordered"], "size_bytes"=>1081101176832, "available_bytes"=>1021679890432, "used_bytes"=>4428931072, "capacity"=>"0.43%", "size"=>"1006.85 GiB", "available"=>"951.51 GiB", "used"=>"4.12 GiB"}, "/usr/lib/wsl/lib"=>{"device"=>"none", "filesystem"=>"overlay", "options"=>["rw", "nosuid", "nodev", "noatime", "lowerdir=/gpu_lib_packaged:/gpu_lib_inbox", "upperdir=/gpu_lib/rw/upper", "workdir=/gpu_lib/rw/work"], "size_bytes"=>6272757760, "available_bytes"=>6272757760, "used_bytes"=>0, "capacity"=>"0%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"0 bytes"}, "/init"=>{"device"=>"rootfs", "filesystem"=>"rootfs", "options"=>["ro", "size=6122324k", "nr_inodes=1530581"], "size_bytes"=>6269259776, "available_bytes"=>6266998784, "used_bytes"=>2260992, "capacity"=>"0.04%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"2.16 MiB"}, "/dev"=>{"device"=>"none", "filesystem"=>"devtmpfs", "options"=>["rw", "nosuid", "relatime", "size=6122324k", "nr_inodes=1530581", "mode=755"], "size_bytes"=>6269259776, "available_bytes"=>6269259776, "used_bytes"=>0, "capacity"=>"0%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"0 bytes"}, "/dev/pts"=>{"device"=>"devpts", "filesystem"=>"devpts", "options"=>["rw", "nosuid", "noexec", "noatime", "gid=5", "mode=620", "ptmxmode=000"], "size_bytes"=>0, "available_bytes"=>0, "used_bytes"=>0, "capacity"=>"100%", "size"=>"0 bytes", "available"=>"0 bytes", "used"=>"0 bytes"}, "/run"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "mode=755"], "size_bytes"=>6272757760, "available_bytes"=>6272172032, "used_bytes"=>585728, "capacity"=>"0.01%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"572.00 KiB"}, "/run/lock"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "noexec", "noatime"], "size_bytes"=>6272757760, "available_bytes"=>6272757760, "used_bytes"=>0, "capacity"=>"0%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"0 bytes"}, "/run/shm"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "noatime"], "size_bytes"=>6272757760, "available_bytes"=>6272757760, "used_bytes"=>0, "capacity"=>"0%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"0 bytes"}, "/dev/shm"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "noatime"], "size_bytes"=>6272757760, "available_bytes"=>6272757760, "used_bytes"=>0, "capacity"=>"0%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"0 bytes"}, "/run/user"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "relatime"], "size_bytes"=>6272757760, "available_bytes"=>6272659456, "used_bytes"=>98304, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"96.00 KiB"}, "/sys/fs/cgroup"=>{"device"=>"tmpfs", "filesystem"=>"tmpfs", "options"=>["ro", "nosuid", "nodev", "noexec", "size=4096k", "nr_inodes=1024", "mode=755"], "size_bytes"=>4194304, "available_bytes"=>4194304, "used_bytes"=>0, "capacity"=>"0%", "size"=>"4.00 MiB", "available"=>"4.00 MiB", "used"=>"0 bytes"}, "/mnt/wslg/versions.txt"=>{"device"=>"none", "filesystem"=>"overlay", "options"=>["rw", "relatime", "lowerdir=/systemvhd", "upperdir=/system/rw/upper", "workdir=/system/rw/work"], "size_bytes"=>6272757760, "available_bytes"=>6272679936, "used_bytes"=>77824, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"76.00 KiB"}, "/mnt/wslg/doc"=>{"device"=>"none", "filesystem"=>"overlay", "options"=>["rw", "relatime", "lowerdir=/systemvhd", "upperdir=/system/rw/upper", "workdir=/system/rw/work"], "size_bytes"=>6272757760, "available_bytes"=>6272679936, "used_bytes"=>77824, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"76.00 KiB"}, "/mnt/wsl/docker-desktop/cli-tools"=>{"device"=>"/dev/loop0", "filesystem"=>"iso9660", "options"=>["ro", "relatime", "nojoliet", "check=s", "map=n", "blocksize=2048", "iocharset=iso8859-1"], "size_bytes"=>516966400, "available_bytes"=>0, "used_bytes"=>516966400, "capacity"=>"100%", "size"=>"493.02 MiB", "available"=>"0 bytes", "used"=>"493.02 MiB"}, "/tmp/.X11-unix"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["ro", "relatime"], "size_bytes"=>6272757760, "available_bytes"=>6272659456, "used_bytes"=>98304, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"96.00 KiB"}, "/mnt/c"=>{"device"=>"C:\\", "filesystem"=>"9p", "options"=>["rw", "dirsync", "noatime", "aname=drvfs;path=C:\\;uid=1001;gid=1002;symlinkroot=/mnt/", "mmap", "access=client", "msize=65536", "trans=fd", "rfd=5", "wfd=5"], "size_bytes"=>511436898304, "available_bytes"=>315551084544, "used_bytes"=>195885813760, "capacity"=>"38.30%", "size"=>"476.31 GiB", "available"=>"293.88 GiB", "used"=>"182.43 GiB"}, "/dev/hugepages"=>{"device"=>"hugetlbfs", "filesystem"=>"hugetlbfs", "options"=>["rw", "relatime", "pagesize=2M"], "size_bytes"=>0, "available_bytes"=>0, "used_bytes"=>0, "capacity"=>"100%", "size"=>"0 bytes", "available"=>"0 bytes", "used"=>"0 bytes"}, "/dev/mqueue"=>{"device"=>"mqueue", "filesystem"=>"mqueue", "options"=>["rw", "nosuid", "nodev", "noexec", "relatime"], "size_bytes"=>0, "available_bytes"=>0, "used_bytes"=>0, "capacity"=>"100%", "size"=>"0 bytes", "available"=>"0 bytes", "used"=>"0 bytes"}, "/run/credentials/systemd-sysusers.service"=>{"device"=>"none", "filesystem"=>"ramfs", "options"=>["ro", "nosuid", "nodev", "noexec", "relatime", "mode=700"], "size_bytes"=>0, "available_bytes"=>0, "used_bytes"=>0, "capacity"=>"100%", "size"=>"0 bytes", "available"=>"0 bytes", "used"=>"0 bytes"}, "/mnt/wsl/docker-desktop-bind-mounts/puppetclient/1e3f10efd5b66e89511d4ace575ae6f00a11f07d7c405a94977aebc6893fa00c"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "relatime"], "size_bytes"=>6272757760, "available_bytes"=>6272659456, "used_bytes"=>98304, "capacity"=>"0.00%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"96.00 KiB"}, "/mnt/wsl/docker-desktop-bind-mounts/puppetclient/71329c4cc6e32171553fa81d044eb31d1a3aac52ba9376c4a99f4505c494cf5b"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "mode=755"], "size_bytes"=>6272757760, "available_bytes"=>6272172032, "used_bytes"=>585728, "capacity"=>"0.01%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"572.00 KiB"}, "/mnt/wsl/docker-desktop-bind-mounts/puppetserver/71329c4cc6e32171553fa81d044eb31d1a3aac52ba9376c4a99f4505c494cf5b"=>{"device"=>"none", "filesystem"=>"tmpfs", "options"=>["rw", "nosuid", "nodev", "mode=755"], "size_bytes"=>6272757760, "available_bytes"=>6272102400, "used_bytes"=>655360, "capacity"=>"0.01%", "size"=>"5.84 GiB", "available"=>"5.84 GiB", "used"=>"640.00 KiB"}}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "dhcp_servers" has resolved to: {"system"=>nil}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "scope6_lo" has resolved to: host
+2025-02-26 15:17:24 +0100 Facter (debug): fact "scope6_eth0" has resolved to: link
+2025-02-26 15:17:24 +0100 Facter (debug): fact "scope6_eth1" has resolved to: link
+2025-02-26 15:17:24 +0100 Facter (debug): fact "sshrsakey" has resolved to: AAAAB3NzaC1yc2EAAAADAQABAAABgQC3iGDjQiEservKvIKbopo/JW3DIVLipLt4+fBg4VDG9FBTJD+5VloPqorAQENoOkkAPctpWvIYEdMXV0CJWllJ0yrXGGdnFz+ECNDC93EW90ukMSiRN5tx/jDH8gLIUnN2xumVgeDlFWeHpZuptbOMjFZIbZTeCqr24wcVTBSTLeQuka4NcoO2T7kYwuGY5br0Zf6nzUgk6fiOEXodt0uo3QWg/TeG9eNo4mJv+2+las6nMJ5yaXo4jsX+9qufhX+ZwD/9P9Xro/6ZVhqaZcaL7708/Gs/MtkcV9nfPnCLEYsI44iLEBYkGbeIUp1Rg8GUy1OK/TaD66D00LTBI6WIQ060s+4KfNELPXm09j2lhHp4RgMl16dxdJ+IDg27TiJJhjY6F2e0kWB/HkimSDsTGxk+NQBcN5TgLe9IP8oV+9oPjbD+ySRDaHDP5QKFZND0mokdMtO8KpE6H9JC/XcBUzJBBDJZjS5XygAsBOHjx/OV/IlW/oG2F8XAiJ26DlE=
+2025-02-26 15:17:24 +0100 Facter (debug): fact "sshecdsakey" has resolved to: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMt6ptZ2z8T9OnNC3ShDTLrd/t7ZnzOSo9keNLdU2tbD6+qAT9GFcoab4cZR0kaA/FJzrujVS4BL+fqyGbKVrR4=
+2025-02-26 15:17:24 +0100 Facter (debug): fact "sshed25519key" has resolved to: AAAAC3NzaC1lZDI1NTE5AAAAINhYWmtpyzx4PRkR8BRYUtC8WJwZ2IJa2ooW7vvlt2MR
+2025-02-26 15:17:24 +0100 Facter (debug): fact "disks" has resolved to: {"sdf"=>{"model"=>"Virtual Disk", "size_bytes"=>1099511627776, "size"=>"1.00 TiB", "vendor"=>"Msft", "type"=>"hdd", "serial"=>"60022480c26971dc86b0b3b6fd581a1a", "wwn"=>"0x60022480c26971dc86b0b3b6fd581a1a"}, "sdd"=>{"model"=>"Virtual Disk", "size_bytes"=>1099511627776, "size"=>"1.00 TiB", "vendor"=>"Msft", "type"=>"hdd", "serial"=>"60022480d47ea647e3e8c5903d398886", "wwn"=>"0x60022480d47ea647e3e8c5903d398886"}, "sdb"=>{"model"=>"Virtual Disk", "size_bytes"=>3221229568, "size"=>"3.00 GiB", "vendor"=>"Msft", "type"=>"hdd", "serial"=>"60022480a57b98c2e8162a678a559eee", "wwn"=>"0x60022480a57b98c2e8162a678a559eee"}, "sdg"=>{"model"=>"Virtual Disk", "size_bytes"=>1099511627776, "size"=>"1.00 TiB", "vendor"=>"Msft", "type"=>"hdd", "serial"=>"60022480431eb5fdcf24f6a9468e24ed", "wwn"=>"0x60022480431eb5fdcf24f6a9468e24ed"}, "sde"=>{"model"=>"Virtual Disk", "size_bytes"=>1099511627776, "size"=>"1.00 TiB", "vendor"=>"Msft", "type"=>"hdd", "serial"=>"600224804ad700a613cf63b86c8198ee", "wwn"=>"0x600224804ad700a613cf63b86c8198ee"}, "sdc"=>{"model"=>"Virtual Disk", "size_bytes"=>1099511627776, "size"=>"1.00 TiB", "vendor"=>"Msft", "type"=>"hdd", "serial"=>"600224808c929f114b460f5501562f17", "wwn"=>"0x600224808c929f114b460f5501562f17"}, "sda"=>{"model"=>"Virtual Disk", "size_bytes"=>407298048, "size"=>"388.43 MiB", "vendor"=>"Msft", "type"=>"hdd", "serial"=>"6002248079f9f66f426ea82fb0957801", "wwn"=>"0x6002248079f9f66f426ea82fb0957801"}}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevices" has resolved to: sdf,sdd,sdb,sdg,sde,sdc,sda
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdf_model" has resolved to: Virtual Disk
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdd_model" has resolved to: Virtual Disk
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdb_model" has resolved to: Virtual Disk
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdg_model" has resolved to: Virtual Disk
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sde_model" has resolved to: Virtual Disk
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdc_model" has resolved to: Virtual Disk
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sda_model" has resolved to: Virtual Disk
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdf_size" has resolved to: 1099511627776
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdd_size" has resolved to: 1099511627776
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdb_size" has resolved to: 3221229568
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdg_size" has resolved to: 1099511627776
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sde_size" has resolved to: 1099511627776
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdc_size" has resolved to: 1099511627776
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sda_size" has resolved to: 407298048
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdf_vendor" has resolved to: Msft
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdd_vendor" has resolved to: Msft
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdb_vendor" has resolved to: Msft
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdg_vendor" has resolved to: Msft
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sde_vendor" has resolved to: Msft
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sdc_vendor" has resolved to: Msft
+2025-02-26 15:17:24 +0100 Facter (debug): fact "blockdevice_sda_vendor" has resolved to: Msft
+2025-02-26 15:17:24 +0100 Facter (debug): fact "sshfp_rsa" has resolved to: SSHFP 1 1 82ff32d8626ef679ef450b2ecb8af14de7c08876
+SSHFP 1 2 da0b87e39091d09a5bf9a88de1681a935ee66fdb93065fac642077c911c4a823
+2025-02-26 15:17:24 +0100 Facter (debug): fact "sshfp_ecdsa" has resolved to: SSHFP 3 1 2d10de1ce69dcb2c4312719dc1393461402ea78f
+SSHFP 3 2 f5a726dff0726878c25b024640ea72253065e272c98e89f61e174f9ebfc0bfb1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "sshfp_ed25519" has resolved to: SSHFP 4 1 33c0a83750a10a1e9944cf3c92a0b86ca003e92d
+SSHFP 4 2 39bbe8abcf8fb79af09f6c58b536067e97b1bac8ee90201ef10541c991796908
+2025-02-26 15:17:24 +0100 Facter (debug): fact "system_uptime.hours" has resolved to: 8
+2025-02-26 15:17:24 +0100 Facter (debug): fact "uptime_hours" has resolved to: 8
+2025-02-26 15:17:24 +0100 Facter (debug): fact "system_uptime.seconds" has resolved to: 29360
+2025-02-26 15:17:24 +0100 Facter (debug): fact "uptime_seconds" has resolved to: 29360
+2025-02-26 15:17:24 +0100 Facter (debug): fact "system_uptime.uptime" has resolved to: 8:09 hours
+2025-02-26 15:17:24 +0100 Facter (debug): fact "uptime" has resolved to: 8:09 hours
+2025-02-26 15:17:24 +0100 Facter (debug): fact "system_uptime.days" has resolved to: 0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "uptime_days" has resolved to: 0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "timezone" has resolved to: CET
+2025-02-26 15:17:24 +0100 Facter (debug): fact "hypervisors.kvm" has resolved to: {}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "partitions" has resolved to: {"/dev/loop1"=>{"size_bytes"=>644966400, "size"=>"615.09 MiB", "backing_file"=>"/mnt/docker-desktop-disk/isocache/entries/docker-desktop.iso/317ddae64c54fd6ec4b8445f831732be3b149a4e5f8f9144898b5b83808559e4", "filesystem"=>"iso9660", "uuid"=>"2024-12-16-23-16-58-00", "label"=>"ISOIMAGE"}, "/dev/loop0"=>{"size_bytes"=>516966400, "size"=>"493.02 MiB", "backing_file"=>"/mnt/docker-desktop-disk/isocache/entries/docker-wsl-cli.iso/5fc6944de23d3c30e4a7bd42dac7d6d12e421b827b916363cfe7bf8dfdf6f85c", "filesystem"=>"iso9660", "uuid"=>"2024-12-10-21-02-41-00", "label"=>"wsl-cli-bundle", "mount"=>"/mnt/wsl/docker-desktop/cli-tools"}}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "facterversion" has resolved to: 4.10.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "filesystems" has resolved to: btrfs,erofs,ext2,ext3,ext4,iso9660,msdos,squashfs,udf,vfat,xfs
+2025-02-26 15:17:24 +0100 Facter (debug): fact "fips_enabled" has resolved to: false
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor0" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor1" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor2" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor3" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor4" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor5" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor6" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor7" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor8" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor9" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor10" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor11" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor12" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor13" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor14" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processor15" has resolved to: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "identity.group" has resolved to: gaborl
+2025-02-26 15:17:24 +0100 Facter (debug): fact "gid" has resolved to: gaborl
+2025-02-26 15:17:24 +0100 Facter (debug): fact "identity.privileged" has resolved to: false
+2025-02-26 15:17:24 +0100 Facter (debug): fact "identity.uid" has resolved to: 1001
+2025-02-26 15:17:24 +0100 Facter (debug): fact "identity.user" has resolved to: gaborl
+2025-02-26 15:17:24 +0100 Facter (debug): fact "id" has resolved to: gaborl
+2025-02-26 15:17:24 +0100 Facter (debug): fact "identity.gid" has resolved to: 1002
+2025-02-26 15:17:24 +0100 Facter (debug): fact "interfaces" has resolved to: eth0,eth1,lo
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress6_lo" has resolved to: ::1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress6_eth0" has resolved to: fe80::215:5dff:fe11:bf8d
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress6_eth1" has resolved to: fe80::7c79:81ff:fe68:7eee
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress_lo" has resolved to: 127.0.0.1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress_eth0" has resolved to: 172.28.103.180
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress_eth1" has resolved to: 172.28.103.181
+2025-02-26 15:17:24 +0100 Facter (debug): fact "is_virtual" has resolved to: true
+2025-02-26 15:17:24 +0100 Facter (debug): fact "virtual" has resolved to: kvm
+2025-02-26 15:17:24 +0100 Facter (debug): fact "kernelmajversion" has resolved to: 5.15
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.network" has resolved to: 172.28.96.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network" has resolved to: 172.28.96.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.domain" has resolved to: home
+2025-02-26 15:17:24 +0100 Facter (debug): fact "domain" has resolved to: home
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.fqdn" has resolved to: puppetclient.home
+2025-02-26 15:17:24 +0100 Facter (debug): fact "fqdn" has resolved to: puppetclient.home
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.hostname" has resolved to: puppetclient
+2025-02-26 15:17:24 +0100 Facter (debug): fact "hostname" has resolved to: puppetclient
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.ip" has resolved to: 172.28.103.180
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress" has resolved to: 172.28.103.180
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.interfaces" has resolved to: {"lo"=>{"bindings"=>[{"address"=>"127.0.0.1", "netmask"=>"255.0.0.0", "network"=>"127.0.0.0"}], "bindings6"=>[{"address"=>"::1", "netmask"=>"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", "network"=>"::1", "scope6"=>"host", "flags"=>["permanent"]}], "mtu"=>65536, "operational_state"=>"unknown", "physical"=>false, "ip"=>"127.0.0.1", "netmask"=>"255.0.0.0", "network"=>"127.0.0.0", "ip6"=>"::1", "netmask6"=>"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff", "network6"=>"::1", "scope6"=>"host"}, "eth0"=>{"mac"=>"00:15:5d:11:bf:8d", "bindings"=>[{"address"=>"172.28.103.180", "netmask"=>"255.255.240.0", "network"=>"172.28.96.0"}], "bindings6"=>[{"address"=>"fe80::215:5dff:fe11:bf8d", "netmask"=>"ffff:ffff:ffff:ffff::", "network"=>"fe80::", "scope6"=>"link", "flags"=>["permanent"]}], "mtu"=>1500, "operational_state"=>"up", "physical"=>true, "speed"=>10000, "duplex"=>"full", "ip"=>"172.28.103.180", "netmask"=>"255.255.240.0", "network"=>"172.28.96.0", "ip6"=>"fe80::215:5dff:fe11:bf8d", "netmask6"=>"ffff:ffff:ffff:ffff::", "network6"=>"fe80::", "scope6"=>"link"}, "eth1"=>{"mac"=>"7e:79:81:68:7e:ee", "bindings"=>[{"address"=>"172.28.103.181", "netmask"=>"255.255.240.0", "network"=>"172.28.96.0"}], "bindings6"=>[{"address"=>"fe80::7c79:81ff:fe68:7eee", "netmask"=>"ffff:ffff:ffff:ffff::", "network"=>"fe80::", "scope6"=>"link", "flags"=>["permanent"]}], "mtu"=>1500, "operational_state"=>"unknown", "physical"=>false, "ip"=>"172.28.103.181", "netmask"=>"255.255.240.0", "network"=>"172.28.96.0", "ip6"=>"fe80::7c79:81ff:fe68:7eee", "netmask6"=>"ffff:ffff:ffff:ffff::", "network6"=>"fe80::", "scope6"=>"link"}}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.mac" has resolved to: 00:15:5d:11:bf:8d
+2025-02-26 15:17:24 +0100 Facter (debug): fact "macaddress" has resolved to: 00:15:5d:11:bf:8d
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.ip6" has resolved to: fe80::215:5dff:fe11:bf8d
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress6" has resolved to: fe80::215:5dff:fe11:bf8d
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.netmask" has resolved to: 255.255.240.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask" has resolved to: 255.255.240.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.mtu" has resolved to: 1500
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.network6" has resolved to: fe80::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network6" has resolved to: fe80::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.netmask6" has resolved to: ffff:ffff:ffff:ffff::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask6" has resolved to: ffff:ffff:ffff:ffff::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.primary" has resolved to: eth0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "networking.scope6" has resolved to: link
+2025-02-26 15:17:24 +0100 Facter (debug): fact "scope6" has resolved to: link
+2025-02-26 15:17:24 +0100 Facter (debug): fact "kernelrelease" has resolved to: 5.15.153.1-microsoft-standard-WSL2
+2025-02-26 15:17:24 +0100 Facter (debug): fact "kernelversion" has resolved to: 5.15.153
+2025-02-26 15:17:24 +0100 Facter (debug): fact "load_averages" has resolved to: {"1m"=>0.09, "5m"=>0.13, "15m"=>0.2}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "macaddress_eth0" has resolved to: 00:15:5d:11:bf:8d
+2025-02-26 15:17:24 +0100 Facter (debug): fact "macaddress_eth1" has resolved to: 7e:79:81:68:7e:ee
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.isa" has resolved to: x86_64
+2025-02-26 15:17:24 +0100 Facter (debug): fact "hardwareisa" has resolved to: x86_64
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.models" has resolved to: ["11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz", "11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz"]
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.physicalcount" has resolved to: 1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "physicalprocessorcount" has resolved to: 1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.speed" has resolved to: 2.50 GHz
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.threads" has resolved to: 2
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.cores" has resolved to: 8
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.count" has resolved to: 16
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processorcount" has resolved to: 16
+2025-02-26 15:17:24 +0100 Facter (debug): fact "processors.extensions" has resolved to: ["x86_64", "x86_64-v1", "x86_64-v2", "x86_64-v3", "x86_64-v4"]
+2025-02-26 15:17:24 +0100 Facter (debug): fact "path" has resolved to: /home/gaborl/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft SDKs/Azure/CLI2/wbin:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/telepresence:/mnt/c/Program Files/SSHFS-Win/bin:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.4.7-hotspot/bin:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.12.7-hotspot/bin:/mnt/c/Program Files/Eclipse Adoptium/jdk-11.0.24.8-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/ProgramData/chocolatey/lib/maven/apache-maven-3.9.9/bin:/mnt/c/ProgramData/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/OpenSSL/bin:/mnt/c/Users/GaborL/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/GaborL/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/ProgramData/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files (x86)/cloudflared/:/mnt/c/Program Files/Git LFS:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Users/GaborL/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/GaborL/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/GaborL/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/GaborL/AppData/Local/Microsoft/WinGet/Packages/Hashicorp.Terraform_Microsoft.Winget.Source_8wekyb3d8bbwe:/mnt/c/Users/GaborL/AppData/Local/Microsoft/WinGet/Packages/jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe:/snap/bin:/opt/puppetlabs/bin:/opt/puppetlabs/bin:/home/gaborl/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/opt/puppetlabs/bin
+2025-02-26 15:17:24 +0100 Facter (debug): fact "mtu_lo" has resolved to: 65536
+2025-02-26 15:17:24 +0100 Facter (debug): fact "mtu_eth0" has resolved to: 1500
+2025-02-26 15:17:24 +0100 Facter (debug): fact "mtu_eth1" has resolved to: 1500
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask6_lo" has resolved to: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask6_eth0" has resolved to: ffff:ffff:ffff:ffff::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask6_eth1" has resolved to: ffff:ffff:ffff:ffff::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask_lo" has resolved to: 255.0.0.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask_eth0" has resolved to: 255.255.240.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "netmask_eth1" has resolved to: 255.255.240.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network6_lo" has resolved to: ::1
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network6_eth0" has resolved to: fe80::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network6_eth1" has resolved to: fe80::
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network_lo" has resolved to: 127.0.0.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network_eth0" has resolved to: 172.28.96.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "network_eth1" has resolved to: 172.28.96.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ssh" has resolved to: {"rsa"=>{"fingerprints"=>{"sha1"=>"SSHFP 1 1 82ff32d8626ef679ef450b2ecb8af14de7c08876", "sha256"=>"SSHFP 1 2 da0b87e39091d09a5bf9a88de1681a935ee66fdb93065fac642077c911c4a823"}, "key"=>"AAAAB3NzaC1yc2EAAAADAQABAAABgQC3iGDjQiEservKvIKbopo/JW3DIVLipLt4+fBg4VDG9FBTJD+5VloPqorAQENoOkkAPctpWvIYEdMXV0CJWllJ0yrXGGdnFz+ECNDC93EW90ukMSiRN5tx/jDH8gLIUnN2xumVgeDlFWeHpZuptbOMjFZIbZTeCqr24wcVTBSTLeQuka4NcoO2T7kYwuGY5br0Zf6nzUgk6fiOEXodt0uo3QWg/TeG9eNo4mJv+2+las6nMJ5yaXo4jsX+9qufhX+ZwD/9P9Xro/6ZVhqaZcaL7708/Gs/MtkcV9nfPnCLEYsI44iLEBYkGbeIUp1Rg8GUy1OK/TaD66D00LTBI6WIQ060s+4KfNELPXm09j2lhHp4RgMl16dxdJ+IDg27TiJJhjY6F2e0kWB/HkimSDsTGxk+NQBcN5TgLe9IP8oV+9oPjbD+ySRDaHDP5QKFZND0mokdMtO8KpE6H9JC/XcBUzJBBDJZjS5XygAsBOHjx/OV/IlW/oG2F8XAiJ26DlE=", "type"=>"ssh-rsa"}, "ecdsa"=>{"fingerprints"=>{"sha1"=>"SSHFP 3 1 2d10de1ce69dcb2c4312719dc1393461402ea78f", "sha256"=>"SSHFP 3 2 f5a726dff0726878c25b024640ea72253065e272c98e89f61e174f9ebfc0bfb1"}, "key"=>"AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMt6ptZ2z8T9OnNC3ShDTLrd/t7ZnzOSo9keNLdU2tbD6+qAT9GFcoab4cZR0kaA/FJzrujVS4BL+fqyGbKVrR4=", "type"=>"ecdsa-sha2-nistp256"}, "ed25519"=>{"fingerprints"=>{"sha1"=>"SSHFP 4 1 33c0a83750a10a1e9944cf3c92a0b86ca003e92d", "sha256"=>"SSHFP 4 2 39bbe8abcf8fb79af09f6c58b536067e97b1bac8ee90201ef10541c991796908"}, "key"=>"AAAAC3NzaC1lZDI1NTE5AAAAINhYWmtpyzx4PRkR8BRYUtC8WJwZ2IJa2ooW7vvlt2MR", "type"=>"ssh-ed25519"}}
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.swap.available" has resolved to: 3.00 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "swapfree" has resolved to: 3.00 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.swap.available_bytes" has resolved to: 3221225472
+2025-02-26 15:17:24 +0100 Facter (debug): fact "swapfree_mb" has resolved to: 3072.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.swap.capacity" has resolved to: 0.00%
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.swap.total" has resolved to: 3.00 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "swapsize" has resolved to: 3.00 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.swap.total_bytes" has resolved to: 3221225472
+2025-02-26 15:17:24 +0100 Facter (debug): fact "swapsize_mb" has resolved to: 3072.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.swap.used" has resolved to: 0 bytes
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.swap.used_bytes" has resolved to: 0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.system.available" has resolved to: 2.25 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memoryfree" has resolved to: 2.25 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.system.available_bytes" has resolved to: 2419912704
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memoryfree_mb" has resolved to: 2307.80859375
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.system.capacity" has resolved to: 80.71%
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.system.total" has resolved to: 11.68 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memorysize" has resolved to: 11.68 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.system.total_bytes" has resolved to: 12545519616
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memorysize_mb" has resolved to: 11964.33984375
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.system.used" has resolved to: 9.43 GiB
+2025-02-26 15:17:24 +0100 Facter (debug): fact "memory.system.used_bytes" has resolved to: 10125606912
+2025-02-26 15:17:24 +0100 Facter (debug): fact "kernel" has resolved to: Linux
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.family" has resolved to: Debian
+2025-02-26 15:17:24 +0100 Facter (debug): fact "osfamily" has resolved to: Debian
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.hardware" has resolved to: x86_64
+2025-02-26 15:17:24 +0100 Facter (debug): fact "hardwaremodel" has resolved to: x86_64
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.selinux.enabled" has resolved to: false
+2025-02-26 15:17:24 +0100 Facter (debug): fact "selinux" has resolved to: false
+2025-02-26 15:17:24 +0100 Facter (debug): fact "os.name" has resolved to: Ubuntu
+2025-02-26 15:17:24 +0100 Facter (debug): fact "operatingsystem" has resolved to: Ubuntu
+2025-02-26 15:17:24 +0100 Facter (debug): fact "puppetversion" has resolved to: 7.34.0
+2025-02-26 15:17:24 +0100 Facter (debug): fact "agent_specified_environment" has resolved to: development
+2025-02-26 15:17:24 +0100 Puppet (debug): Evicting cache entry for environment :development
+2025-02-26 15:17:24 +0100 Puppet (debug): Deleted text domain :development: false
+2025-02-26 15:17:24 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:24 +0100 Facter (debug): resolving fact with user_query: fqdn
+2025-02-26 15:17:24 +0100 Facter (debug): Searching fact: fqdn in file: fqdn.rb
+2025-02-26 15:17:24 +0100 Facter (debug): Searching fact: fqdn in core facts and external facts
+2025-02-26 15:17:24 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:24 +0100 Facter (debug): List of resolvable facts: [#<Facter::SearchedFact:0x000055a81a17c970 @name="fqdn", @fact_class=Facts::Linux::Networking::Fqdn, @user_query="fqdn", @type=:legacy, @file=nil>]
+2025-02-26 15:17:24 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:24 +0100 Facter (debug): fact "fqdn" has resolved to: puppetclient.home
+2025-02-26 15:17:24 +0100 Facter (debug): resolving fact with user_query: ipaddress
+2025-02-26 15:17:24 +0100 Facter (debug): Searching fact: ipaddress in file: ipaddress.rb
+2025-02-26 15:17:24 +0100 Facter (debug): Searching fact: ipaddress in core facts and external facts
+2025-02-26 15:17:24 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:24 +0100 Facter (debug): List of resolvable facts: [#<Facter::SearchedFact:0x000055a81a0c1e90 @name="ipaddress", @fact_class=Facts::Linux::Networking::Ip, @user_query="ipaddress", @type=:legacy, @file=nil>]
+2025-02-26 15:17:24 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress" has resolved to: 172.28.103.180
+2025-02-26 15:17:24 +0100 Facter (debug): resolving fact with user_query: ipaddress6
+2025-02-26 15:17:24 +0100 Facter (debug): Searching fact: ipaddress6 in file: ipaddress6.rb
+2025-02-26 15:17:24 +0100 Facter (debug): Searching fact: ipaddress6 in core facts and external facts
+2025-02-26 15:17:24 +0100 Facter (debug): Loading all internal facts
+2025-02-26 15:17:24 +0100 Facter (debug): List of resolvable facts: [#<Facter::SearchedFact:0x000055a81a007e00 @name="ipaddress6", @fact_class=Facts::Linux::Networking::Ip6, @user_query="ipaddress6", @type=:legacy, @file=nil>]
+2025-02-26 15:17:24 +0100 Facter (debug): Loading external facts
+2025-02-26 15:17:24 +0100 Facter (debug): fact "ipaddress6" has resolved to: fe80::215:5dff:fe11:bf8d
+2025-02-26 15:17:24 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:24 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:24 +0100 Puppet (debug): Caching environment :development (ttl = 0 sec)
+2025-02-26 15:17:24 +0100 Puppet (debug): Path to /etc/puppetlabs/puppetserver/code/environments/development does not exist, using default environment.conf
+2025-02-26 15:17:24 +0100 Puppet (notice): Compiled catalog for puppetclient.home in environment development in 0.01 seconds
+2025-02-26 15:17:24 +0100 Puppet (debug): Found in cache :development (ttl = 0 sec)
+2025-02-26 15:17:24 +0100 Puppet (debug): Creating default schedules
+2025-02-26 15:17:24 +0100 Puppet (debug): Loaded state in 0.00 seconds
+2025-02-26 15:17:24 +0100 Puppet (info): Using environment 'development'
+2025-02-26 15:17:24 +0100 Puppet (debug): Loaded state in 0.00 seconds
+2025-02-26 15:17:24 +0100 Puppet (info): Applying configuration version '1740579444'
+2025-02-26 15:17:24 +0100 Puppet (debug): Finishing transaction 12660
+2025-02-26 15:17:24 +0100 Puppet (debug): Storing state
+2025-02-26 15:17:24 +0100 Puppet (debug): Pruned old state cache entries in 0.00 seconds
+2025-02-26 15:17:24 +0100 Puppet (debug): Stored state in 0.00 seconds
+2025-02-26 15:17:24 +0100 Puppet (notice): Applied catalog in 0.01 seconds
+2025-02-26 15:17:24 +0100 Puppet (debug): Applying settings catalog for sections reporting, metrics
+2025-02-26 15:17:24 +0100 Puppet (debug): Finishing transaction 15660
+2025-02-26 15:17:24 +0100 Puppet (debug): Received report to process from puppetclient.home
+2025-02-26 15:17:24 +0100 Puppet (debug): Processing report from puppetclient.home with processor Puppet::Reports::Store
