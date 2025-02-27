@@ -14,7 +14,6 @@ The project is organized into several directories and files, each serving a spec
   - **profile/**: A module for managing profile-specific configurations.
     - **manifests/**: Contains manifests for the profile module.
       - **init.pp**: Initializes the profile module.
-      - **linux.pp**: Placeholder for Linux-specific configurations.
     - **templates/**: Contains EPP templates.
       - **example.epp**: An example of an Embedded Puppet template.
 
